@@ -7,6 +7,8 @@ const ChatApp = () => {
   const [messages, setMessages] = useState(mockMessages);
 
   const handleSendMessage = (message) => {
+    console.log(message);
+
     setMessages((prevMessages) => [...prevMessages, message]);
   };
 

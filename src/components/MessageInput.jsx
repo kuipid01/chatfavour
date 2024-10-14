@@ -10,6 +10,7 @@ const MessageInput = ({ onSendMessage }) => {
     if (inputValue || selectedImage) {
       const message = {
         id: Date.now(),
+        timestamp: Date.now(),
         sender: "user",
         type: selectedImage ? "image" : "text",
         text: inputValue,
@@ -26,17 +27,23 @@ const MessageInput = ({ onSendMessage }) => {
   };
 
   return (
-    <div className="flex flex-col h-[10vh] fixed bottom-0 right-0 w-3/4 space-y-2 p-4 bg-gray-100 rounded-lg">
+    <div className="flex h-[10vh] fixed bottom-0 right-0 w-3/4 space-y-2 p-4 bg-gray-100 rounded-lg">
       {selectedImage && (
-        <div className="image-preview mb-2">
+        <div className="image-preview relative mr-4">
           <img
             src={URL.createObjectURL(selectedImage)}
             alt="Preview"
-            className="w-24 h-24 object-cover rounded-md border border-gray-300"
+            className="w-24 h-[10vh] object-cover rounded-md border border-gray-300"
           />
+          <span
+            onClick={() => setSelectedImage(null)}
+            className=" absolute cursor-pointer text-red-500 top-0 right-2 font-bold"
+          >
+            x
+          </span>
         </div>
       )}
-      <div className="flex items-center space-x-2">
+      <div className="flex flex-1 items-center space-x-2">
         <input
           type="text"
           placeholder="Type a message"

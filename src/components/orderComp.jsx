@@ -63,7 +63,7 @@ const OrderComp = () => {
           </div>
           <div>
             <span className=" font-bold text-black mr-3">
-              Total Amunt Paid:
+              Total Amount Paid:
             </span>
             <span>10/20/1997</span>
           </div>

@@ -8,10 +8,10 @@ const MessageList = ({ messages }) => {
   const groupedMessages = groupMessagesByDate(messages); // Group messages by date
 
   return (
-    <div className="message-list  flex  ">
+    <div className="message-list h-[90vh] overflow-y-auto  flex flex-col  ">
       {Object.keys(groupedMessages).map((dateHeading) => (
         <div
-          className=" flex  flex-col w-full p-4 pb-10 overflow-y-auto h-[90vh]"
+          className=" flex  flex-col w-full gap-4 p-4 pb-10 "
           key={dateHeading}
         >
           <div className="date-heading">{dateHeading}</div>{" "}
