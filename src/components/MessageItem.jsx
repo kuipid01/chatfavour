@@ -19,7 +19,11 @@ const MessageItem = ({ message }) => {
     >
       {message.type === "text" && <p>{message.text}</p>}
       {message.type === "image" && (
-        <img src={message.imageUrl} alt="Sent image" />
+        <img
+          className=" h-[100px] w-20"
+          src={message.imageUrl}
+          alt="Sent image"
+        />
       )}
       {message.order && <OrderComp />}
     </div>
