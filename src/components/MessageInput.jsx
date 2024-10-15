@@ -27,7 +27,7 @@ const MessageInput = ({ onSendMessage }) => {
   };
 
   return (
-    <div className="flex h-[10vh] fixed bottom-0 right-0 w-3/4 space-y-2 p-4 bg-gray-100 rounded-lg">
+    <div className="flex h-[10vh] fixed bottom-0 right-0 w-full md:w-3/4 space-y-2 p-4 bg-gray-100 rounded-lg">
       {selectedImage && (
         <div className="image-preview relative mr-4">
           <img

@@ -1,9 +1,9 @@
 const OrderComp = () => {
   return (
-    <div className=" bg-white text-black p-5 rounded-lg mt-5 grid grid-cols-2">
+    <div className=" bg-white text-sm md:text-base text-black p-5 rounded-xl md:rounded-lg mt-4 md:mt-5 grid grid-cols-2">
       <div className=" grid gap-3 grid-cols-1">
         <div>
-          <h1 className=" text-lg font-bold text-[#007145]">
+          <h1 className=" md:text-lg md:font-bold font-semibold text-base text-[#007145]">
             Customer Details
           </h1>
           <div>
@@ -20,7 +20,7 @@ const OrderComp = () => {
           </div>
         </div>
         <div>
-          <h1 className=" text-lg font-bold text-[#007145]">
+          <h1 className=" md:text-lg md:font-bold font-semibold text-base text-[#007145]">
             Delivery Details
           </h1>
           <div>

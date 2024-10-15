@@ -14,7 +14,7 @@ const ChatApp = () => {
 
   return (
     <div className="w-full h-screen  flex ">
-      <div className=" w-1/4 h-screen bg-red-100"></div>
+      <div className=" hidden md:block w-1/4 h-screen bg-red-100"></div>
       <div
         className=" h-screen flex flex-1 flex-col justify-between
       "
