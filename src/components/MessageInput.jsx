@@ -49,9 +49,9 @@ const MessageInput = ({ onSendMessage }) => {
           placeholder="Type a message"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="flex-1 placeholder:text-[12.5px] placeholder:leading-[18.75px] border-[#9A9A9A] px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
         />
-        <input
+        {/* <input
           type="file"
           accept="image/*"
           onChange={handleImageUpload}
@@ -63,10 +63,10 @@ const MessageInput = ({ onSendMessage }) => {
           className="cursor-pointer text-green-500 hover:text-green-600"
         >
           📷
-        </label>
+        </label> */}
         <button
           onClick={handleSend}
-          className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+          className="bg-[#007145] leading-[18.75px] text-white text-[12.5px] h-[29px] w-[58px] rounded-lg hover:bg-green-600"
         >
           Send
         </button>

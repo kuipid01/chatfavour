@@ -4,7 +4,8 @@
 
 .date-heading {
   text-align: center;
-  font-weight: bold;
-  margin: 20px 0;
-  color: #888;
+  font-weight: normal;
+  margin: 59px 0;
+  color: #7f7f7f;
+  font-size: 13px;
 }
